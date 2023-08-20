@@ -1,0 +1,163 @@
+### USUARIOS
+### Colsultar todos usuarios
+GET http://localhost:3000/usuarios
+
+### Colsultar un usuario
+GET http://localhost:3000/usuarios/4
+
+### Agregar un usuario
+POST  http://localhost:3000/usuarios/
+Content-Type: application/json
+
+  {
+    "id_tipo": 2,
+    "nombre": "Pato Lucas",
+    "usuario": "LucasP",
+    "contraseña": "PatoLu",
+    "direccion": "Huachichiles 116",
+    "correo": "lucasPato@gmail.com",
+    "telefono": "4552460908"
+  }
+
+### Actualizar un usuario
+PUT  http://localhost:3000/usuarios/5
+Content-Type: application/json
+
+  {
+    "id_usuario": 5,
+    "id_tipo": 1,
+    "nombre": "Pato Lucas",
+    "usuario": "LucasP",
+    "contraseña": "PatoLu",
+    "direccion": "Huachichiles 116",
+    "correo": "lucasPato@gmail.com",
+    "telefono": "4552460908"
+  }
+
+### Eliminar un usuario
+DELETE  http://localhost:3000/accesos/
+
+
+
+### ACCESOS
+### Colsultar todos los acesos
+GET http://localhost:3000/accesos
+
+### Colsultar un acceso
+GET http://localhost:3000/accesos/1
+
+### Agregar un acceso
+POST  http://localhost:3000/accesos/
+Content-Type: application/json
+
+  {
+    
+    "id_auto": 2,
+    "id_usuario": 2,
+    "fecha": "2023-07-31T06:00:00.000Z",
+    "hora_entrada": "10:38:18",
+    "hora_salida": "",
+    "monto": 65,
+    "estado": "A"
+  }
+### Actualizar un acceso
+PUT  http://localhost:3000/accesos/1
+Content-Type: application/json
+
+  {
+    "id_acceso": 1,
+    "id_auto": 1,
+    "id_usuario": 2,
+    "fecha": "2023-07-31T06:00:00.000Z",
+    "hora_entrada": "09:38:18",
+    "hora_salida": "12:38:18",
+    "monto": 55,
+    "estado": "I"
+  }
+
+### Eliminar un acceso
+DELETE  http://localhost:3000/accesos/3
+
+
+
+### AUTO
+### Colsultar todos los autos
+GET http://localhost:3000/autos
+
+### Colsultar un auto
+GET http://localhost:3000/auto/1
+
+### Agregar un auto
+POST  http://localhost:3000/auto/
+Content-Type: application/json
+
+  {
+    
+    "id_categoria": 2,
+    "placa": "12g72e",
+    "modelo": "jetta",
+    "marca": "vw",
+    "color": "Rojo"
+
+  }
+### Actualizar un auto
+PUT  http://localhost:3000/auto/1
+Content-Type: application/json
+
+  {
+
+    "id_categoria": 2,
+    "placa": "12g72e",
+    "modelo": "jetta",
+    "marca": "vw",
+    "color": "Rojo"
+
+  }
+
+### Eliminar un auto
+DELETE  http://localhost:3000/auto/1
+
+
+
+### CATEGORÍA
+### Colsultar todas las categorias
+GET http://localhost:3000/categorias
+
+### Colsultar una categoria
+GET http://localhost:3000/categorias/1
+
+### Actualizar una categoria
+PUT  http://localhost:3000/categorias/1
+Content-Type: application/json
+
+  {
+
+    "id_categoria": 1,
+    "descripcion": "Vehículo ligero",
+    "costo": 20
+
+  }
+
+
+### TICKETS
+### Colsultar todas las categorias
+GET http://localhost:3000/tickets
+
+### Colsultar una categoria
+GET http://localhost:3000/tickets/1
+
+### Actualizar una categoria
+PUT  http://localhost:3000/tickets/1
+Content-Type: application/json
+
+  {
+
+    "id_categoria": 1,
+    "descripcion": "Vehículo ligero",
+    "costo": 20
+
+  }
+
+  ### Eliminar un auto
+DELETE  http://localhost:3000/auto/1
+
